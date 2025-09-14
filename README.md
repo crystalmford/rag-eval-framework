@@ -1,21 +1,18 @@
 # RAG Evaluation Framework
 
-**Author:** Crystal M. Ford  
-**Target Role:** Data Scientist II — Microsoft M365 Core  
+This project provides a simple framework for evaluating Retrieval-Augmented Generation (RAG) systems. It runs retrieval, generation, and evaluation steps on sample data to help measure how well different retrievers and models perform.
 
-This notebook demonstrates a lightweight evaluation framework for Retrieval-Augmented Generation (RAG) systems.  
-It measures:
+## How to Use
 
-- Retrieval accuracy (precision@k)
-- Answer quality (semantic similarity to reference answers)
-- Hallucination risk (faithfulness to retrieved context and IDK rate)
+1. Install dependencies  
+2. Open and run the notebook  
+3. Review results and visualizations  
+4. Export as PDF  
+   - File → Print → Save as PDF  
+   - Make sure **Background graphics** is turned **ON**
 
-The framework uses FAISS for meaning-based retrieval, FLAN-T5 for answer generation, and a custom evaluation pipeline with automated metrics and visual reporting.
+## Files
 
----
-
-## How to View
-
-- **Notebook (GitHub):** [evalforge_clean.ipynb](./evalforge_clean.ipynb)  
-- **nbviewer (rendered view):** <ADD_YOUR_NBVIEWER_LINK_HERE>  
-- **PDF work sample:** Included with job application
+- `rag-eval-framework.ipynb` — main notebook  
+- `data/` — sample evaluation data  
+- `assets/` — optional saved charts or figures
